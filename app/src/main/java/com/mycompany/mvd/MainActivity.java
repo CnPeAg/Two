@@ -20,7 +20,7 @@ public class MainActivity extends Activity
 		vd.setMediaController(new MediaController(this));
     }
 	public void onClick(View v)
-	{
+	{   Toast.makeText(this,"Click",1).show();
 		Intent intent=new Intent(Intent.ACTION_GET_CONTENT);
 		intent.setType("video/*");
 		startActivityForResult(Intent.createChooser(intent,"Video Chooser"),PICK_VIDEO_CODE);
